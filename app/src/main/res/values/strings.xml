@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Elibrary</string>
+    <string name="open" />
+    <string name="close" />
+    <string name="todo" />
+    <string name="action_settings" />
+
+</resources>
