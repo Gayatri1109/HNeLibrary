@@ -8,36 +8,42 @@
     tools:openDrawer="start"
     tools:context=".HomeActivity">
 
-    <LinearLayout
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        <LinearLayout
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:title="HNeLibrary"
-            app:subtitleTextAppearance="@color/colorWhite"
-            app:navigationIcon="@color/colorWhite"
-            app:titleTextColor="#000000"
-            android:background="#77ACF1"
-            />
-
-        <FrameLayout
-            android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            />
-    </LinearLayout>
+            android:orientation="vertical">
 
-    <com.google.android.material.navigation.NavigationView
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:id="@+id/navmenu"
-        app:menu="@menu/iconmenu"
-        app:headerLayout="@layout/navheader"
-        android:layout_gravity="start"/>
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:subtitleTextAppearance="@color/colorWhite"
+                app:navigationIcon="@color/colorWhite"
+                app:titleTextColor="#000000"
+                app:title="HNeLibrary"
+                android:background="#77ACF1"/>
 
+
+
+            <FrameLayout
+                android:id="@+id/fragment_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/navmenu"
+            app:menu="@menu/iconmenu"
+            app:headerLayout="@layout/navheader"
+            android:layout_gravity="start"/>
 </androidx.drawerlayout.widget.DrawerLayout>
+
+
+

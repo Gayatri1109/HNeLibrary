@@ -20,11 +20,29 @@ public class DBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table tbl_login(email TEXT primary key,username TEXT,password TEXT)");
+        db.execSQL("create table member_info(MemberName TEXT, MemberType TINYINT, Phone VARCHAR(10), Gender CHAR(1))");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists tbl_login");
+    }
+
+    public Boolean insertData(String MemberName,Integer MemberType,String Phone,String Gender){
+        SQLiteDatabase db=this.getWritableDatabase();
+        ContentValues contentValues=new ContentValues();
+         contentValues.put("MemberName",MemberName);
+        contentValues.put("MemberType",MemberType);
+        contentValues.put("Phone",Phone);
+        contentValues.put("Gender",Gender);
+        long result = db.insert("member_info",null,contentValues);
+
+        if(result==-1)
+            return false;
+        else
+            return true;
+
+
     }
 
     public Boolean insertData(String username,String email,String password){
@@ -34,7 +52,8 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put("Email",email);
         contentValues.put("Password",password);
         long result = db.insert("tbl_login",null,contentValues);
-        if(result==-1)return false;
+        if(result==-1)
+            return false;
         else
             return true;
 

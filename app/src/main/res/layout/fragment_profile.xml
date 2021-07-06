@@ -7,30 +7,14 @@
     android:id="@+id/profile"
     android:background="#fff">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/bgheader"
-            android:layout_width="match_parent"
-            android:layout_height="180dp" />
-
-
-        <!--<de.hdodenhof.circleimageview.CircleImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentRight="true"
-            android:layout_margin="10dp"
-            android:background="@drawable/ovalpink_grad"
-            android:src="@drawable/ic_baseline_edit_24"
-            android:padding="10dp"
-            android:onClick="editprofile"
-            android:soundEffectsEnabled="true" />-->
+        android:layout_height="wrap_content">
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:id="@+id/cv"
             android:layout_marginTop="60dp"
             android:layout_marginLeft="40dp"
@@ -44,10 +28,12 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="0dp"
                 android:orientation="vertical"
+                android:background="#FFFFFF"
                 tools:ignore="ExtraText"
                 android:gravity="center">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userphoto"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="15dp"
@@ -61,12 +47,27 @@
 
                 <TextView
                     android:id="@+id/txt_username"
-                    android:layout_width="300dp"
+                    android:layout_width="140dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
-                    android:textColor="#E60828"
-                    android:textSize="25sp"
-                    android:textStyle="normal" />
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:text="Username"
+                    android:textStyle="normal|bold" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/border_sec"
+                    android:textSize="16dp"
+                    android:paddingLeft="0dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:textColor="#000000"
+                    />
 
                 <view
                     class="android.widget.TextView"
@@ -77,53 +78,19 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginRight="15dp"/>
 
-
-
-                <LinearLayout
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:background="@drawable/border_first"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:id="@+id/txt_name"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_margin="5dp"
-                        android:background="@drawable/border_sec"
-                        android:paddingLeft="5dp"
-                        android:hint="Name"
-                        android:inputType="text"
-                        android:textColor="#000000" />
-
-
-                </LinearLayout>
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Mobile No."
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginRight="5dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginLeft="5dp"
-                    android:background="@drawable/border_first"
-                    android:orientation="vertical">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"
-                        android:layout_margin="5dp"
-                        android:background="@drawable/border_sec"
-                        android:hint="Email"
-                        android:inputType="textEmailAddress"
-                        android:paddingLeft="5dp"
-                        android:textColor="#000000" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
@@ -137,13 +104,24 @@
                         android:layout_margin="5dp"
                         android:background="@drawable/border_sec"
                         android:hint="Mobile No."
-                        android:inputType="number"
+                        android:inputType="phone"
                         android:maxLength="10"
                         android:paddingLeft="5dp"
                         android:textColor="#000000" />
                 </LinearLayout>
-                <LinearLayout
+
+                <TextView
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Gender"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
@@ -151,18 +129,31 @@
                     android:background="@drawable/border_first"
                     android:orientation="vertical">
 
-                    <EditText
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:id="@+id/gender"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:layout_margin="5dp"
-                        android:background="@drawable/border_sec"
-                        android:hint="gender"
-                        android:inputType="text"
                         android:paddingLeft="5dp"
-                        android:textColor="#000000" />
+                        android:hint="Gender"
+                        android:textColor="#000000"
+                        android:entries="@array/Gender">
+
+                    </androidx.appcompat.widget.AppCompatSpinner>
+
                 </LinearLayout>
-                <LinearLayout
+
+                <TextView
                     android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Age"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    />
+                <LinearLayout
+                    android:layout_width="300dp"
                     android:layout_height="50dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginTop="10dp"
@@ -176,20 +167,21 @@
                         android:layout_height="40dp"
                         android:layout_margin="5dp"
                         android:background="@drawable/border_sec"
-                        android:hint="password"
+                        android:hint="Age"
+                        android:inputType="number"
                         android:paddingLeft="5dp"
                         android:textColor="#000000" />
                 </LinearLayout>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
-        </androidx.cardview.widget.CardView>
+       </androidx.cardview.widget.CardView>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:gravity="center"
             android:elevation="2dp"
-            android:layout_marginTop="550dp">
+            android:layout_marginTop="620dp">
 
             <Button
                 android:id="@+id/btn_save"
@@ -197,7 +189,7 @@
                 android:layout_height="40dp"
                 android:text="Save"
                 android:layout_marginBottom="2dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="0dp"
                 android:textColor="#fff"
                 android:textStyle="normal"
                 android:background="@drawable/gradient_button"

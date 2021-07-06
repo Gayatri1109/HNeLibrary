@@ -18,15 +18,15 @@
         android:textStyle="bold" />
 
     <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="10dp"
-                android:paddingLeft="60dp"
-                android:paddingBottom="25dp"
-                android:text="Books are a uniquely portable magic."
-                android:textColor="#1B9589"
-                android:textSize="18sp"
-                android:textStyle="bold|italic" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="60dp"
+        android:paddingBottom="25dp"
+        android:text="Books are a uniquely portable magic."
+        android:textColor="#1B9589"
+        android:textSize="18sp"
+        android:textStyle="bold|italic" />
 
 
     <!--body-->
@@ -38,7 +38,6 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <!--android:padding="@dimen/material_emphasis_medium"-->
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -49,26 +48,24 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
                     android:text="Categories"
                     android:textStyle="bold"
                     android:textSize="19sp"
                     android:textColor="@color/black"/>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    <!--android:paddingRight="@dimen/material_emphasis_medium"-->
-
-                </LinearLayout>
 
             </LinearLayout>
 
         </RelativeLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="400dp"
+            android:layout_height="530dp"
             android:background="@drawable/violet_circular_border"
             android:orientation="vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="10dp"
             android:padding="16dp">
 
             <RelativeLayout
@@ -98,398 +95,196 @@
 
             </RelativeLayout>
 
-            <HorizontalScrollView
+            <!--<HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <LinearLayout
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/white_circular_border"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:padding="16dp">
-
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"/>
-                            <!--android:src="@drawable/yqhm"-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Science"
-                                android:textStyle="bold"
-                                android:gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"/>
-
-
-                        </LinearLayout>
-
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/white_circular_border"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:padding="16dp"
-                        android:layout_marginLeft="20dp">
-
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"/>
-                            <!--android:src="@drawable/stem"-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Physics"
-                                android:textStyle="bold"
-                                android:gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"/>
-
-
-                        </LinearLayout>
-
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/white_circular_border"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:padding="16dp"
-                        android:layout_marginLeft="20dp">
-
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"/>
-                            <!--android:src="@drawable/visual"-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Biology"
-                                android:textStyle="bold"
-                                android:gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"/>
-
-
-                        </LinearLayout>
-
-
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/white_circular_border"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:padding="16dp"
-                        android:layout_marginLeft="20dp">
-
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"/>
-                            <!--android:src="@drawable/math"-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Mathematics"
-                                android:textStyle="bold"
-                                android:gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"/>
-
-
-                        </LinearLayout>
-
-
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-            </HorizontalScrollView>
-
-        </LinearLayout>
-
-
-
-    </LinearLayout>
-
-    <!--bottom-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <!--android:padding="@dimen/material_emphasis_medium"-->
+                android:layout_height="wrap_content">-->
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="4dp">
+                android:layout_height="500dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Top Authors"
-                    android:textStyle="bold"
-                    android:textSize="19sp"
-                    android:textColor="@color/black"/>
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                   <!-- android:paddingRight="@dimen/material_emphasis_medium"-->
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_circular_border"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/philosophy" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="5dp"
+                            android:text="Philosophy "
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+
+                    </LinearLayout>
+
+
+
+
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_circular_border"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_marginStart="30dp"
+                    android:padding="16dp"
+                    android:layout_marginLeft="30dp">
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/technology"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Technology"
+                            android:paddingTop="5dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"/>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
 
             </LinearLayout>
 
-        </RelativeLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:background="@drawable/white_circular_border"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="-250dp"
+                android:layout_marginStart="10dp"
+                android:padding="16dp"
+                android:layout_marginLeft="10dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/yellow_ocur_circular_border"
-            android:orientation="vertical"
-            android:padding="16dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="8dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Suggested for you"
-                    android:textStyle="bold"
-                    android:layout_alignParentStart="true"
-                    android:textSize="16sp"
-                    android:textColor="#ffffff"
-                    android:layout_alignParentLeft="true" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View all"
-                    android:textStyle="bold"
-                    android:layout_alignParentEnd="true"
-                    android:textSize="16sp"
-                    android:textColor="#ffffff"
-                    android:layout_alignParentRight="true" />
-
-            </RelativeLayout>
-
-            <HorizontalScrollView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/science"
+                    android:scaleType="centerCrop"/>
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
 
-                    <LinearLayout
-                        android:layout_width="160dp"
+                    <TextView
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/white_circular_border"
-                        android:orientation="vertical"
+                        android:text="Science"
+                        android:textStyle="bold"
+                        android:paddingTop="20dp"
                         android:gravity="center"
-                        android:padding="16dp">
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
 
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"/>
-                            <!--android:src="@drawable/auther"-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Julia Donaldson"
-                                android:textStyle="bold"
-                                android:gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/white_circular_border"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:padding="16dp"
-                        android:layout_marginLeft="20dp">
-
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"/>
-                            <!--android:src="@drawable/auther1"-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Roald\n Dahl"
-                                android:textStyle="bold"
-                                android:gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/white_circular_border"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:padding="16dp"
-                        android:layout_marginLeft="20dp">
-
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"/>
-                            <!--android:src="@drawable/rowling"-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Joanne Rowling"
-                                android:textStyle="bold"
-                                android:gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"/>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/white_circular_border"
-                        android:orientation="vertical"
-                        android:gravity="center"
-                        android:layout_marginStart="20dp"
-                        android:padding="16dp"
-                        android:layout_marginLeft="20dp">
-
-                        <ImageView
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:scaleType="centerCrop"/>
-                            <!--android:src="@drawable/auther2"-->
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingLeft="8dp"
-                            android:paddingRight="8dp">
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Maurice Sendak"
-                                android:textStyle="bold"
-                                android:gravity="center"
-                                android:textColor="@color/black"
-                                android:textSize="16sp"/>
-                        </LinearLayout>
-
-                    </LinearLayout>
 
                 </LinearLayout>
 
-            </HorizontalScrollView>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="200dp"
+                android:background="@drawable/white_circular_border"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="-200dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/languages"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Programming"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
 
         </LinearLayout>
 
     </LinearLayout>
 
+
+
+    <!-- </HorizontalScrollView>-->
+
 </LinearLayout>
+
+

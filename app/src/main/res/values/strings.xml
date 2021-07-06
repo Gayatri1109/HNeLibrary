@@ -5,4 +5,9 @@
     <string name="todo" />
     <string name="action_settings" />
 
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
 </resources>
